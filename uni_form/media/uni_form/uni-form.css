@@ -116,3 +116,8 @@ YOU CAN VERY EASILY REVERT TO A GENERIC STYLE OF UNI-FORM. BEST OF LUCK...
 
 /* ------------------------------------------------------------------------------ */
 
+.uniForm .multiField, .uniForm .blockLabels .multiField{ width: 60%; }
+.uniForm .formHint, .uniForm .blockLabels .formHint{ width: 40%; margin-top: .3em; }
+.uniForm .textInput, .uniForm select, .uniForm textarea{ border: 2px solid #dfdfdf; background:#fff; }
+.ctrlHolder.focused .textInput{ border-color: #DFD77D; }
+.uniForm .buttonHolder{ padding: 10px 10px 10px 0; font-size: 120%; margin: 1em 0;border: 1px solid #ccc; border-width: 1px 0; background: #f9f9f9; }
