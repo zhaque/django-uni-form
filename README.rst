@@ -21,6 +21,11 @@ To::
 Installation
 ============
 
+Dependencies
+~~~~~~~~~~~~
+
+ * JQuery 1.2.6
+
 Installing django-uni-form
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -54,11 +59,15 @@ Django Uni-Form requires three media files.  You can see how we call them by loo
     <link rel="stylesheet" href="{{ MEDIA_URL }}uni_form/uni-form.css" type="text/css" />
     <script src="{{ MEDIA_URL }}uni_form/uni-form.jquery.js" type="text/javascript"></script>
 
-2. Via use of the Django **includes** built-in template tag.
+2. Also make sure you have a link to where you keep a copy of JQuery 1.2.6 (We are looking into updating this ASAP)::
+
+    <script src="{{ MEDIA_URL }}js/jquery.js" type="text/javascript"></script>
+
+3. Via use of the Django **includes** built-in template tag.
 
     {% include "uni_form/includes.html" %}
     
-3. With some additional setup described below, via use of the Django Uni-Form **uni_form_setup** template tag.
+4. With some additional setup described below, via use of the Django Uni-Form **uni_form_setup** template tag.
 
     {% uni_form_setup %}
 
@@ -77,7 +86,7 @@ If you don't like the use of '*' (asterisk) to denote required fields you can si
     cd ~/<my-projects>/<my-awesome-django-project>/templates/
     mkdir uni_form
     cd uni_form/
-    cp <my-site-packages>/Django-uni-form/uni_form/templates/field.html .
+    cp <my-site-packages>/Django-uni-form/uni_form/templates/uni_form/field.html .
     
 Now you could change the asterisk to any other character, an image icon, or whatever else you want.
 
